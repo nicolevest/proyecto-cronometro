@@ -1,18 +1,16 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-
-@NgModule({
+import { CronometroComponent } from './cronometro/cronometro.component';
+@NgModule ({
   declarations: [
-    AppComponent
+    AppComponent,
+    CronometroComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
-  providers: [],
+ providers: [],
   bootstrap: [AppComponent]
-})
+} )
 export class AppModule { }
